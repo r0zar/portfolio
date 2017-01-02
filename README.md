@@ -1,2 +1,2 @@
-# angularjs-firebase-website
-simple website using angularjs with firebase backend
+# portfolio
+simple portfolio using angularjs
