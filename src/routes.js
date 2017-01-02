@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"] */
 export default routesConfig;
 
 /** @ngInject */
@@ -9,5 +10,13 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('app', {
       url: '/',
       component: 'app'
+    })
+    .state('software', {
+      url: '/software',
+      component: 'software'
+    })
+    .state('music', {
+      url: '/music',
+      component: 'music'
     });
 }

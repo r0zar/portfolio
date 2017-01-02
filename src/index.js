@@ -1,10 +1,12 @@
+/* eslint linebreak-style: ["error", "windows"] */
 import angular from 'angular';
 
-import {techsModule} from './app/techs/index';
 import 'angular-ui-router';
 import routesConfig from './routes';
 
 import {main} from './app/main';
+import {software} from './app/software';
+import {music} from './app/music';
 import {header} from './app/header';
 import {title} from './app/title';
 import {footer} from './app/footer';
@@ -12,9 +14,11 @@ import {footer} from './app/footer';
 import './index.scss';
 
 angular
-  .module('app', [techsModule, 'ui.router'])
+  .module('app', ['ui.router'])
   .config(routesConfig)
   .component('app', main)
+  .component('software', software)
+  .component('music', music)
   .component('fountainHeader', header)
   .component('fountainTitle', title)
   .component('fountainFooter', footer);
