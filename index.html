@@ -13,12 +13,11 @@
   </head>
 
   <body ng-controller="MainCtrl">
-    guest@rosspc:~/$ Hello, welcome to my site.<br>
     <div ng-repeat="line in lines track by $index">
        {{line}}
     </div>
     <form ng-submit="enter()">
-      guest@rosspc:~/$ <input type="text" ng-model="gutter" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      guest@rosspc:~/$<input type="text" autofocus ng-model="gutter" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
     </form>
   </body>
 

@@ -12,9 +12,20 @@ select {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Courier New";
   background: black;
   color: white;
   font-size: 18px;
   padding: 18px;
+}
+
+input {
+  font-family: "Courier New";
+  margin-left: 10px;
+  margin-bottom: 1px;
+  flex: 2;
+}
+
+form {
+  display: flex;
 }
