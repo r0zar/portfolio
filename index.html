@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>rossragsdale.com</title>
+    <link data-require="bootstrap@*" data-semver="4.0.5" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+    <script data-require="bootstrap@*" data-semver="4.0.5" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.5.x" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js" data-semver="1.5.11"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    guest@rosspc:~/$ Hello, welcome to my site.<br>
+    <div ng-repeat="line in lines track by $index">
+       {{line}}
+    </div>
+    <form ng-submit="enter()">
+      guest@rosspc:~/$ <input type="text" ng-model="gutter" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </form>
+  </body>
+
+</html>

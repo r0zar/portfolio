@@ -1,0 +1,20 @@
+/* Put your css in here */
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+  border: none;
+  line-height: initial;
+  background: black;
+  color: white;
+}
+
+body {
+  font-family: sans-serif;
+  background: black;
+  color: white;
+  font-size: 18px;
+  padding: 18px;
+}
